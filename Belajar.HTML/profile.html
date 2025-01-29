@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5dc; /* Cream background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #d2b48c; /* Tan color for header */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #333;
+            font-size: 2.5rem;
+        }
+
+        /* Back Button */
+        .back-button {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            background-color: #d2b48c;
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #a58863;
+            color: #fff;
+        }
+
+        .back-button img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .profile-text {
+            flex: 1;
+            max-width: 50%;
+            padding: 20px;
+        }
+
+        .profile-text h2 {
+            font-size: 2rem;
+            color: #8b4513; /* Classic brown for title */
+            margin-bottom: 10px;
+        }
+
+        .profile-text p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .profile-photo {
+            flex: 1;
+            max-width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border: 5px solid #d2b48c; /* Match header tan color */
+        }
+
+        footer {
+            background-color: #d2b48c;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            color: #fff;
+        }
+
+        .back-home {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+            background-color: #d2b48c;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        .back-home:hover {
+            background-color: #a58863;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Back to Previous Page Icon -->
+        <a href="javascript:history.back()" class="back-button">
+            <img src="back.png" alt="back-home"> Kembali
+        </a>
+        <h1>Profile and Photo</h1>
+    </header>
+
+    <main>
+        <!-- Deskripsi Teks -->
+        <section class="profile-text">
+            <h2>Tentang Saya</h2>
+            <p>
+                Selamat datang di halaman profil! Saya Marvel, seorang penyedia layanan digital 
+                yang berfokus pada pembuatan produk kreatif seperti undangan digital, gambar animasi, 
+                template e-buletin, dan banyak lagi. Saya percaya bahwa kreativitas adalah kunci untuk 
+                membuat dunia digital lebih menarik dan bermakna.
+            </p>
+            <p>
+                Melalui produk-produk ini, saya ingin membantu Anda menghidupkan ide-ide 
+                Anda dengan sentuhan personal dan penuh keindahan. Terima kasih telah 
+                mengunjungi halaman profil saya!
+            </p>
+        </section>
+
+        <!-- Foto Besar -->
+        <section class="profile-photo">
+            <img src="profile.jpg" alt="Foto Profil Marvel">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PRODUK DIGITAL MARVEL. All rights reserved.</p>
+        <a href="webkerja.html" class="back-home">Kembali ke Laman Utama</a>
+    </footer>
+</body>
+</html>
